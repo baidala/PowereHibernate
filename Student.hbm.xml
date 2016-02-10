@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate-sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Student" table="Student" >
+        <meta attribute="class-description">
+            This class is Student
+        </meta>
+        <id name="id" type="int" column="id"/>
+        <property column="name" name="name" type="String"/>
+        <property column="mark" name="mark" type="int"/>
+    </class>
+</hibernate-mapping>
