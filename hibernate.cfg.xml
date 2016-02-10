@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate-sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://db4free.net:3306/feneror</property>
+        <property name="hibernate.connection.username">feneror</property>
+        <property name="hibernate.connection.password">feneror</property>
+        <property name="hibernate.show_sql">true</property>
+        
+        <mapping resource="powerhibernate/Student.hbm.xml"/>
+        
+        
+        
+    </session-factory>
+</hibernate-configuration>
