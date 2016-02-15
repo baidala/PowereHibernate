@@ -23,8 +23,10 @@ public class Main {
     private static SessionFactory factory;
     
     public static void main(String[] args) {
-        factory = new Configuration().configure(new File("src\\powerhibernate\\hibernate.cfg.xml")).buildSessionFactory();
+        //factory = new Configuration().configure(new File("src\\powerhibernate\\hibernate.cfg.xml")).buildSessionFactory();
         
+        factory = HibernateUtil.getSessionFactory();
+                
         addStudent( new Student ("Viktor", 5) );
         
         
