@@ -9,12 +9,12 @@ and open the template in the editor.
 "http://hibernate-sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="Student" table="Student" >
+    <class name="powerhibernate.Student" table="Student" >
         <meta attribute="class-description">
             This class is Student
         </meta>
         <id name="id" type="int" column="id"/>
-        <property column="name" name="name" type="String"/>
+        <property column="name" name="name" type="string"/>
         <property column="mark" name="mark" type="int"/>
     </class>
 </hibernate-mapping>
