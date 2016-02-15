@@ -10,6 +10,7 @@ and open the template in the editor.
 
 <hibernate-configuration>
     <session-factory>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://db4free.net:3306/feneror</property>
@@ -17,9 +18,7 @@ and open the template in the editor.
         <property name="hibernate.connection.password">feneror</property>
         <property name="hibernate.show_sql">true</property>
         
-        <mapping resource="powerhibernate/Student.hbm.xml"/>
-        
-        
-        
+        <mapping class="powerhibernate.Student"/>
+
     </session-factory>
 </hibernate-configuration>
